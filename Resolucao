@@ -1,0 +1,105 @@
+//biblioteca
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() //função principal
+{
+    menu(); //chamar o menu
+    system("pause"); //pausar
+    return 0; //retornar
+}
+
+void menu(){ //menu
+    int escolha; //variavel inteira inserida pelo utilizador
+
+    printf("\t\tBem-vindo a calculadora em C\n\n");
+    printf("Selecione uma operacao matematica:\n");
+
+    //4 opções de calcular
+    printf("\t1- Adicao\n");
+    printf("\t2- Subtracao\n");
+    printf("\t3- Divisao\n");
+    printf("\t4- Multiplicacao\n");
+    printf("\t5- Sair\n");
+
+    printf("Operacao: ");
+    scanf ("%d", &escolha); //armazena o int digitado em escolha
+
+    switch (escolha){ //função de seleção de escolha no menu
+    case 1: //caso digite 1
+        soma(); //chama a soma
+        break; //terminar a função de soma
+    case 2:
+        subtrai();
+        break;
+    case 3:
+        divide();
+        break;
+    case 4:
+        multiplica();
+        break;
+    case 5: //sair
+        system("exit"); // fechar o programa
+        printf("\nA fechar o programa...\n\n");
+        break;
+
+    default: //caso nao digite nenhum dos cases
+        printf("\nO comando inserido, e invalido! Por favor insira novamente...\n\n");
+        system("pause"); //pausa
+        system("cls"); //limpar
+        menu(); //chama o menu novamente
+        break;
+    }
+}
+
+void soma(){ //função da soma
+    float valor1, valor2, result; // declaração de variáveis
+    printf("\nDigite o 1 valor: "); //pedir valor1
+    scanf("%f", &valor1); //armazenar o valor1
+    printf("\nDigite o 2 valor: "); //pedir valor1
+    scanf("%f", &valor2); //armazenar o valor1
+    result = valor1 + valor2;
+    printf("\nResultado: %.2f\n\n", result); //mostrar o resultado
+    system ("pause"); //Pausa
+    system("cls"); //limpar
+    menu(); //Chama o menu
+}
+
+void subtrai(){ //função da subtração
+    float valor1, valor2, result; // declaração de variáveis
+    printf("\nDigite o 1 valor: "); //pedir valor1
+    scanf("%f", &valor1); //armazenar o valor1
+    printf("\nDigite o 2 valor: "); //pedir valor1
+    scanf("%f", &valor2); //armazenar o valor1
+    result = valor1 - valor2;
+    printf("\nResultado: %.2f\n\n", result); //mostrar o resultado
+    system ("pause"); //Pausa
+    system("cls"); //limpar
+    menu(); //Chama o menu
+}
+
+void divide(){ //função da divisão
+    float valor1, valor2, result; // declaração de variáveis
+    printf("\nDigite o 1 valor: "); //pedir valor1
+    scanf("%f", &valor1); //armazenar o valor1
+    printf("\nDigite o 2 valor: "); //pedir valor1
+    scanf("%f", &valor2); //armazenar o valor1
+    result = valor1 / valor2;
+    printf("\nResultado: %.2f\n\n", result); //mostrar o resultado
+    system ("pause"); //Pausa
+    system("cls"); //limpar
+    menu(); //Chama o menu
+}
+
+void multiplica(){ //função da multiplicação
+    float valor1, valor2, result; // declaração de variáveis
+    printf("\nDigite o 1 valor: "); //pedir valor1
+    scanf("%f", &valor1); //armazenar o valor1
+    printf("\nDigite o 2 valor: "); //pedir valor1
+    scanf("%f", &valor2); //armazenar o valor1
+    result = valor1 * valor2;
+    printf("\nResultado: %.2f\n\n", result); //mostrar o resultado
+    system ("pause"); //Pausa
+    system("cls"); //limpar
+    menu(); //Chama o menu
+}
