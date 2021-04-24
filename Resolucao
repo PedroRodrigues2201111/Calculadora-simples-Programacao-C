@@ -56,8 +56,8 @@ void soma(){ //função da soma
     float valor1, valor2, result; // declaração de variáveis
     printf("\nDigite o 1 valor: "); //pedir valor1
     scanf("%f", &valor1); //armazenar o valor1
-    printf("\nDigite o 2 valor: "); //pedir valor1
-    scanf("%f", &valor2); //armazenar o valor1
+    printf("\nDigite o 2 valor: "); //pedir valor2
+    scanf("%f", &valor2); //armazenar o valor2
     result = valor1 + valor2;
     printf("\nResultado: %.2f\n\n", result); //mostrar o resultado
     system ("pause"); //Pausa
@@ -69,8 +69,8 @@ void subtrai(){ //função da subtração
     float valor1, valor2, result; // declaração de variáveis
     printf("\nDigite o 1 valor: "); //pedir valor1
     scanf("%f", &valor1); //armazenar o valor1
-    printf("\nDigite o 2 valor: "); //pedir valor1
-    scanf("%f", &valor2); //armazenar o valor1
+    printf("\nDigite o 2 valor: "); //pedir valor2
+    scanf("%f", &valor2); //armazenar o valor2
     result = valor1 - valor2;
     printf("\nResultado: %.2f\n\n", result); //mostrar o resultado
     system ("pause"); //Pausa
@@ -82,8 +82,8 @@ void divide(){ //função da divisão
     float valor1, valor2, result; // declaração de variáveis
     printf("\nDigite o 1 valor: "); //pedir valor1
     scanf("%f", &valor1); //armazenar o valor1
-    printf("\nDigite o 2 valor: "); //pedir valor1
-    scanf("%f", &valor2); //armazenar o valor1
+    printf("\nDigite o 2 valor: "); //pedir valor2
+    scanf("%f", &valor2); //armazenar o valor2
     result = valor1 / valor2;
     printf("\nResultado: %.2f\n\n", result); //mostrar o resultado
     system ("pause"); //Pausa
@@ -95,8 +95,8 @@ void multiplica(){ //função da multiplicação
     float valor1, valor2, result; // declaração de variáveis
     printf("\nDigite o 1 valor: "); //pedir valor1
     scanf("%f", &valor1); //armazenar o valor1
-    printf("\nDigite o 2 valor: "); //pedir valor1
-    scanf("%f", &valor2); //armazenar o valor1
+    printf("\nDigite o 2 valor: "); //pedir valor2
+    scanf("%f", &valor2); //armazenar o valor2
     result = valor1 * valor2;
     printf("\nResultado: %.2f\n\n", result); //mostrar o resultado
     system ("pause"); //Pausa
